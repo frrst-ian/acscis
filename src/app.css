@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src:
+    url('/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+    url('/fonts/sourcesanspro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Red Hat';
+  src:
+    url('/fonts/redhatdisplay-regular-webfont.woff2') format('woff2'),
+    url('/fonts/redhatdisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code';
+  src:
+    url('/fonts/cascadia-webfont.woff2') format('woff2'),
+    url('/fonts/cascadia-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --text: #dee3f2;
+  --background: #14171f;
+  --background-2: #272a32;
+  --primary: #1254ed;
+  --secondary: #dd27b3;
+  --accent: #5f82e3;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro';
+}
+
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Red Hat';
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+body {
+  padding: 0 10rem;
+}
