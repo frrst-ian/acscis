@@ -99,7 +99,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 290px;
+    height: 330px;
     background: #1c1f2a;
   }
 
