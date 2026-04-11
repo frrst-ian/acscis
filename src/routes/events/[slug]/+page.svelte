@@ -1,5 +1,5 @@
 <script>
-  import { Calendar, ChevronLeft, ChevronRight, Camera} from '@lucide/svelte';
+  import { Calendar, ChevronLeft, ChevronRight, Camera } from '@lucide/svelte';
 
   let { data } = $props();
   let slides = $derived(data.event.slides);
@@ -18,6 +18,7 @@
 </script>
 
 <main>
+  <a class="back" href="/events"><span>&larr;</span>Events</a>
   <h1>{data.event.name}</h1>
 
   <div class="date">
@@ -29,8 +30,8 @@
     <p>{data.event.desc}</p>
   </div>
 
-  <div class="photos-header" >
-    <Camera width="24"  height="30px"/> 
+  <div class="photos-header">
+    <Camera width="24" height="30px" />
     <h3>Photos</h3>
   </div>
 
@@ -71,6 +72,23 @@
     align-items: center;
     margin-top: 1.5rem;
     margin-bottom: 12rem;
+  }
+
+  a.back {
+    width: 130px;
+    font-size: 1rem;
+    align-self: start;
+    margin-left: 11rem;
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 0.2rem;
+    font-size: 1.4rem;
+  }
+
+  a:hover span {
+    transform: translate(-2px);
   }
 
   h1 {
@@ -201,6 +219,4 @@
     margin-bottom: 1.4rem;
     align-items: center;
   }
-
-
 </style>

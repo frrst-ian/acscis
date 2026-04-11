@@ -24,7 +24,7 @@
   </div>
 
   {#if selected?.text === 'All Events'}
-  <p class="event-cat">All Events</p>
+    <p class="event-cat">All Events</p>
     <div class="events">
       {#each data.summaries as event (event.slug)}
         <a href="/events/{event.slug}">
@@ -47,7 +47,7 @@
   {/if}
 
   {#if selected?.text === 'Upcoming Events'}
-    <p class="event-cat" >Upcoming Events</p>
+    <p class="event-cat">Upcoming Events</p>
     <div class="events">
       {#each data.summaries as event (event.slug)}
         {#if event.category === 'Upcoming Event'}
@@ -72,7 +72,7 @@
     </div>
   {/if}
   {#if selected?.text === 'Recent Events'}
-    <p class="event-cat" >Recent Events</p>
+    <p class="event-cat">Recent Events</p>
     <div class="events">
       {#each data.summaries as event (event.slug)}
         {#if event.category === 'Recent Event'}
@@ -114,9 +114,9 @@
   }
 
   select {
-    appearance: none; /* Disable the default arrow */
-    -webkit-appearance: none; /* For WebKit-based browsers */
-    -moz-appearance: none; /* For Firefox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
     border: none;
     background: var(--background-2);
@@ -131,11 +131,6 @@
     background-position: right 8px center;
     background-size: 20px;
     cursor: pointer;
-  }
-
-  select:hover,
-  select:focus {
-    background: #2e2d39;
   }
 
   option {
